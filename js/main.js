@@ -1,11 +1,19 @@
 (() => {
     function useIsotope(event) {
 let masonry = new Masonry( '.grid', {
-    columnWidth: 400,
+    columnWidth: 280,
     itemSelector: '.grid-item',
     percentSelector: true,
 });
 
+        let elem = document.querySelector('.grid');
+        let iso = new Isotope( '.flowers', {
+            // options
+            itemSelector: '.art',
+            layoutMode: 'fitRows'
+        });}})
+
+/*
 let applyFilterFromLink = (linkObject) => {
     let filterValue = linkObject.dataset.filter;
     // let filterValue = event.target.dataset.filter;
@@ -36,4 +44,4 @@ applyFilterFromLink(activeBtn);
 }
 
 document.addEventListener('DOMContentLoaded', useIsotope);
-})();
+})();*/
