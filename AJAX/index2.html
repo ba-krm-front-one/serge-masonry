@@ -21,10 +21,10 @@
 
 <main>
     <div class="filter">
-        <a class="filter-btn" href="#" data-filter=".art">Imagine-Art</a>
-        <a class="filter-btn" href="#" data-filter=".flowers">Flowers</a>
-        <a class="filter-btn" href="#" data-filter=".dude">TreeMan</a>
-        <a class="active filter-btn" href="#" data-filter="*">All images</a>
+        <a class="filter-btn" href="#" data-filter='.art'>Imagine-Art</a>
+        <a class="filter-btn" href="#" data-filter='.flowers'>Flowers</a>
+        <a class="filter-btn" href="#" data-filter='.dude'>TreeMan</a>
+        <a class="active filter-btn" href="#" data-filter='*'>All images</a>
     </div>
     <div class="grid">
         <div class="sizer"></div>
@@ -50,18 +50,23 @@
     <h1>GIKBUNKER</h1>
     <div class="google-map"></div>
 </main>
+
+
 <footer class="footer"></footer>
-
-
-
+<!--<script type="text/javascript">
+    function initMap() {
+        // Create a map object and specify the DOM element for display.
+        let map = new google.maps.Map(document.querySelector('.google-map'), {
+            center: {lat: 48.742827, lng: 37.587973},
+            scrollwheel: false,
+            zoom: 18
+        });
+    }
+</script>-->
 <script src="js/map.js" defer></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBzivyiXOgLjv-MaKuJkjNl5kk3dchM4c&callback=initMap" async defer></script>
-<!--
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js" defer></script>
--->
 <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js" defer></script>
-
-
-<script src="js/main2.js" defer></script>
+<script src="js/main.js" defer></script>
 </body>
 </html>
