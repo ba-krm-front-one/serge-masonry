@@ -4,12 +4,12 @@ function initMap() {
     let map = new google.maps.Map(document.querySelector('.google-map'), {
         center: {lat: 48.742827, lng: 37.587973},
         scrollwheel: false,
-        zoom: 18
+        zoom: 15
     });
     let marker = new google.maps.Marker({
         position: urulu,
         map: map,
-        icon: 'favicon.ico'
+        icon: 'assets/flashxsmall.png'
     });
 }
 /*function initMap() {*/

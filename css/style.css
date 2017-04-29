@@ -118,6 +118,8 @@ select:focus {
 
 .google-map {
 	height: 400px;
+	width: 900px;
+	margin: 0 auto;
 }
 .size {
 	width: 700px;
