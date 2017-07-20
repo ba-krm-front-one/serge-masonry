@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Masonry</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=""/>
+    <link rel="icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/layout.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+
+<!--
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js" defer></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js" defer></script>
+-->
+</head>
+<body>
+<header class="header"></header>
+
+<main>
+    <div class="filter">
+        <a class="filter-btn" href="#" data-filter='.art'>Imagine-Art</a>
+        <a class="filter-btn" href="#" data-filter='.flowers'>Flowers</a>
+        <a class="filter-btn" href="#" data-filter='.dude'>TreeMan</a>
+        <a class="active filter-btn" href="#" data-filter='*'>All images</a>
+    </div>
+    <div class="grid">
+        <div class="sizer"></div>
+        <div>
+            <div class="grid-item grid-item--width2 grid-item--height2 art"><img src="assets/10.jpg" alt=""></div>
+            <div class="grid-item grid-item--width2 grid-item--height2 art"><img src="assets/11.jpg" alt=""></div>
+            <div class="grid-item grid-item--width2 grid-item--height2 art"><img src="assets/16.jpg" alt=""></div>
+            <div class="grid-item grid-item--width2 grid-item--height2 art"><img src="assets/18.jpg" alt=""></div>
+        </div>
+        <div>
+            <div class="grid-item grid-item--width3 grid-item--height3 flowers"><img src="assets/213.png" alt=""></div>
+            <div class="grid-item grid-item--width3 grid-item--height3 flowers"><img src="assets/214.png" alt=""></div>
+            <div class="grid-item grid-item--width3 grid-item--height3 flowers"><img src="assets/215.png" alt=""></div>
+            <div class="grid-item grid-item--width3 grid-item--height3 flowers"><img src="assets/216.png" alt=""></div>
+        </div>
+        <div>
+            <div class="grid-item grid-item--width4 grid-item--height4 dude"><img src="assets/Veluw_001.jpg" alt=""></div>
+            <div class="grid-item grid-item--width4 grid-item--height4 dude"><img src="assets/Veluw_002.jpg" alt=""></div>
+            <div class="grid-item grid-item--width4 grid-item--height4 dude"><img src="assets/Veluw_003.jpg" alt=""></div>
+            <div class="grid-item grid-item--width4 grid-item--height4 dude"><img src="assets/Veluw_004.jpg" alt=""></div>
+        </div>
+    </div>
+    <h1>GIKBUNKER</h1>
+    <div class="google-map"></div>
+</main>
+
+
+<footer class="footer"></footer>
+<!--<script type="text/javascript">
+    function initMap() {
+        // Create a map object and specify the DOM element for display.
+        let map = new google.maps.Map(document.querySelector('.google-map'), {
+            center: {lat: 48.742827, lng: 37.587973},
+            scrollwheel: false,
+            zoom: 18
+        });
+    }
+</script>-->
+<script src="js/map.js" defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBzivyiXOgLjv-MaKuJkjNl5kk3dchM4c&callback=initMap" async defer></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js" defer></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
